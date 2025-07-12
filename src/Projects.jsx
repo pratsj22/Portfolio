@@ -46,7 +46,7 @@ const Projects = () => {
   };
 
   return (
-    <div className='flex w-full pt-5 md:pb-16 pb-10 sm:scroll-mt-0 scroll-mt-60' style={{ minHeight: 'calc(100vh - 90px)' }} id='projects'>
+    <div className='flex w-full pt-5 md:pb-16 pb-10 sm:scroll-mt-0 scroll-mt-60 @min-2xl:min-h-screen h-fit' id='projects'>
       <div className='flex items-center w-full mt-16 flex-col relative overflow-hidden box-border xl:px-20 md:px-10 px-5'>
         {/* <img src='/new.jpg' alt='' className='absolute inset-0 h-full w-full opacity-10 mask-image' /> */}
         <h1 className='md:text-5xl text-4xl font-bold text-indigo-100 tracking-wide md:pb-5 pb-2 pt-10 mb-10 text-left w-full pl-10 font-poppins'>Projects</h1>

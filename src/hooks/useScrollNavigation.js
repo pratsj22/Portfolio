@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const useScrollNavigation = (isProgrammaticScroll) => {
   const [activeSection, setActiveSection] = useState(0);
+  const activeSectionRef = useRef(0);
 
   const sections = [
     { id: 'home', href: '/' },
@@ -25,7 +26,10 @@ const useScrollNavigation = (isProgrammaticScroll) => {
           }
         }
       }
-      return activeSection;
+      if(window.scrollY < 100){
+        return 0;
+      }
+      return activeSectionRef.current;
     };
 
     // Throttle function to limit scroll event frequency
@@ -35,6 +39,7 @@ const useScrollNavigation = (isProgrammaticScroll) => {
       if (!ticking) {
         requestAnimationFrame(() => {
           const currentSection = getCurrentSection();
+          activeSectionRef.current = currentSection;
           setActiveSection(prevSection => {
             if (currentSection !== prevSection) {
               return currentSection;
@@ -57,6 +62,7 @@ const useScrollNavigation = (isProgrammaticScroll) => {
   }, [isProgrammaticScroll]);
 
   const updateActiveSection = (index) => {
+    activeSectionRef.current = index;
     setActiveSection(index);
   };
 

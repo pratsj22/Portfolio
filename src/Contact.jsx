@@ -22,8 +22,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen w-full flex items-center justify-center bg-custom-bg py-12 pt-40 px-2 scroll-mt-60 sm:scroll-mt-0" id="contact">
-      <div className="w-full max-w-6xl bg-custom-bg rounded-xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+    <section className="h-fit w-full flex justify-center bg-custom-bg py-12 pt-16 px-2 scroll-mt-72 sm:scroll-mt-16" id="contact">
+      <div className="lg:w-3/4 w-full bg-custom-bg rounded-xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
         {/* Left: Info */}
         <div className="relative flex flex-col justify-between p-10 bg-gradient-to-br from-[#181534] to-[#291c36]">
           {/* Subtle grid pattern */}

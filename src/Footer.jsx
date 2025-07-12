@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className="border-t border-gray-800 pt-1">
                     <div className="text-gray-400 font-inter">
                         <p className="text-sm mt-2">
-                            © 2024 Prathmesh Jain. All rights reserved.
+                            © 2025 Prathmesh Jain. All rights reserved.
                         </p>
                     </div>
                 </div>
