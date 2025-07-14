@@ -68,7 +68,7 @@ export default function Example() {
                                                 aria-current={index === activeSection ? 'page' : undefined}
                                                 className={classNames(
                                                     index === activeSection ? 'bg-indigo-700 text-white' : 'text-black-300 hover:bg-indigo-300 hover:text-black',
-                                                    'rounded-md md:px-3 px-2 py-2 md:text-sm text-xs font-medium font-inter outline-none',
+                                                    'rounded-md md:px-3 px-2 py-2 md:text-sm text-xs font-medium font-inter outline-none whitespace-nowrap',
                                                 )}
                                                 onClick={(e) => {
                                                     e.preventDefault();

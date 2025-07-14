@@ -50,11 +50,11 @@ const Projects = () => {
       <div className='flex items-center w-full mt-16 flex-col relative overflow-hidden box-border xl:px-20 md:px-10 px-5'>
         {/* <img src='/new.jpg' alt='' className='absolute inset-0 h-full w-full opacity-10 mask-image' /> */}
         <h1 className='md:text-5xl text-4xl font-bold text-indigo-100 tracking-wide md:pb-5 pb-2 pt-10 mb-10 text-left w-full pl-10 font-poppins'>Projects</h1>
-        <div className='flex w-full md:w-11/12 h-fit md:p-5 p-2 justify-between flex-wrap gap-8'>
+        <div className='flex w-full md:w-11/12 h-fit xl:p-5 md:p-0 sm:p-5 gap-8 md:gap-0 justify-between flex-wrap'>
           {projectsData.map((project, idx) => (
             <div
               key={project.title}
-              className='group rounded-3xl shadow-md relative hover:text-indigo-200 border-2 border-custom-bg text-gray-300 hover:border-indigo-700 hover:shadow-blue-500 transition-all ease-in duration-300 cursor-pointer bg-custom-bg overflow-hidden md:h-[21rem] h-[18rem] md:w-[21rem] w-[18rem] mx-auto'
+              className='group rounded-3xl shadow-md relative hover:text-indigo-200 border-2 border-custom-bg text-gray-300 hover:border-indigo-700 hover:shadow-blue-500 transition-all ease-in duration-300 cursor-pointer bg-custom-bg overflow-hidden xl:h-[20rem] lg:h-[17rem] h-[18rem] xl:w-[20rem] lg:w-[17rem] w-[18rem] mx-auto'
               onClick={() => openModal(project)}
             >
               <img src={project.image} alt='' className='h-full w-full opacity rounded-3xl' />
