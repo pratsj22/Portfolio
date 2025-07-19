@@ -11,15 +11,10 @@ const App = () => {
   return (
     <div className='App'>
       <Navbar/>
-      {/* <SectionDivider/> */}
       <Home/>
-      {/* <SectionDivider/> */}
       <Skills/>
-      {/* <SectionDivider/> */}
       <Experience/>
-      {/* <SectionDivider/> */}
       <Projects/>
-      {/* <SectionDivider/> */}
       <Contact/>
       <Footer/>
     </div>

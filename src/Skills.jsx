@@ -1,4 +1,3 @@
-// import './coding-styles.css'
 import SVGComponent from './SvgComponent'
 
 const Skills = () => {

@@ -54,12 +54,12 @@ const Projects = () => {
           {projectsData.map((project, idx) => (
             <div
               key={project.title}
-              className='group rounded-3xl shadow-md relative hover:text-indigo-200 border-2 border-custom-bg text-gray-300 hover:border-indigo-700 hover:shadow-blue-500 transition-all ease-in duration-300 cursor-pointer bg-custom-bg overflow-hidden xl:h-[20rem] lg:h-[17rem] h-[18rem] xl:w-[20rem] lg:w-[17rem] w-[18rem] mx-auto'
+              className='group rounded-3xl shadow-md relative hover:text-indigo-200 border-2 border-custom-bg text-gray-300 hover:border-indigo-700 hover:shadow-blue-500 transition-all ease-in duration-300 cursor-pointer bg-custom-bg overflow-hidden xl:h-[20rem] lg:h-[17rem] md:h-[14rem] h-[18rem] xl:w-[20rem] lg:w-[17rem] md:w-[14rem] w-[18rem] mx-auto'
               onClick={() => openModal(project)}
             >
               <img src={project.image} alt='' className='h-full w-full opacity rounded-3xl' />
-              <div className='absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all ease-in duration-300'></div>
-              <div className='text-sm font-semibold text-left bg-black/60 group-hover:bg-indigo-900/90 border border-none group-hover:border-solid group-hover:border-indigo-700 rounded-full p-2 px-6 absolute bottom-5 left-5'>
+              <div className='absolute inset-0 sm:bg-black/30 bg-black/10 group-hover:bg-transparent transition-all ease-in duration-300'></div>
+              <div className='lg:text-sm text-xs font-semibold text-left bg-black/60 group-hover:bg-indigo-900/90 border border-none group-hover:border-solid group-hover:border-indigo-700 rounded-full p-2 lg:px-6 px-4 absolute bottom-5 left-5'>
                 {project.title}
                 <div>{project.subtitle}</div>
               </div>

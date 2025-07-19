@@ -1,6 +1,4 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-// import { Menu, Close } from '@mui/icons-material'
 import { FaBars, FaTimes } from "react-icons/fa";
 import useScrollNavigation from './hooks/useScrollNavigation'
 import { useRef } from 'react';
@@ -20,8 +18,9 @@ function classNames(...classes) {
 export default function Example() {
     const isProgrammaticScroll = useRef(false);
     const { activeSection, updateActiveSection, sections } = useScrollNavigation(isProgrammaticScroll);
-
+    let timer = null;
     const handleNavClick = (index) => {
+        if(timer) clearTimeout(timer);
         isProgrammaticScroll.current = true;
         if (index === 0) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -32,9 +31,9 @@ export default function Example() {
             }
         }
         updateActiveSection(index);
-        let timer = setTimeout(() => {
+        timer = setTimeout(() => {
             isProgrammaticScroll.current = false;
-            clearTimeout(timer);
+            timer=null;
         }, 700); // match scroll duration
     };
     return (

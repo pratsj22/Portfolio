@@ -71,7 +71,7 @@ const ProjectModal = ({ project, onClose }) => {
       <div
         ref={modalRef}
         tabIndex={-1}
-        className="relative z-50 bg-white/10 backdrop-blur-2xl border border-indigo-400 shadow-2xl rounded-3xl w-[98vw] max-w-5xl max-h-[95vh] flex flex-col md:flex-row outline-none animate-modalPop overflow-hidden font-inter"
+        className="relative z-50 bg-white/10 backdrop-blur-2xl border border-indigo-400 shadow-2xl rounded-3xl w-[98vw] max-w-5xl max-h-[95vh] flex flex-col md:flex-row outline-none animate-modalPop overflow-hidden font-inter sm:h-full h-[95%]"
         aria-modal="true"
         role="dialog"
       >
@@ -121,12 +121,12 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
         </div>
         {/* Right: Image Slideshow */}
-        <div className="flex flex-col items-center justify-center bg-black/20 md:w-[420px] w-full md:py-14 py-4 px-8 relative">
-          <div className="relative w-full flex flex-col h-fit justify-center sm:my-auto" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+        <div className=" bg-black/20 md:w-[420px] w-full md:py-14 md:h-full h-1/2 pb-10 py-4 px-8 relative">
+          <div className="relative md:w-full md:h-full h-9/12 w-9/12 m-auto" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             <img
               src={project.gallery[imgIdx]}
               alt={project.title + ' screenshot ' + (imgIdx + 1)}
-              className="rounded-2xl w-full sm:min-h-72 sm:h-[70%] sm:max-h-max max-h-84 shadow-lg border-2 border-indigo-700 bg-black/30 transition-all duration-300"
+              className={`rounded-2xl md:w-full ${project.title === 'ExpenseGauge' ? 'w-[60%] h-full' : 'w-full  h-[90%]'} m-auto md:max-h-max max-h-84 md:min-h-72 shadow-lg border-2 border-indigo-700 bg-black/30 transition-all duration-300`}
               style={{ background: 'rgba(30,27,75,0.2)' }}
             />
             {/* Pagination Controls */}
