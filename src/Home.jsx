@@ -23,7 +23,7 @@ const Home = () => {
                 <div>
                     <img src="/photo1.jpeg" alt="" className='w-screen mt-1 mask-home-image h-[650px]' style={{ opacity, borderBottomRightRadius: 60, borderBottomLeftRadius: 60 }} />
                 </div>
-                <div className='absolute sm:top-24 top-32 flex w-full items-center justify-center flex-col gap-4 sm:px-5 sm:mt-10'>
+                <div className='absolute sm:top-[10%] top-32 flex w-full items-center justify-center flex-col gap-4 sm:px-5 sm:mt-10'>
                     <div className="flex flex-col md:text-5xl sm:text-3xl text-[1.7rem] sm:font-sans font-poppins tracking-wide !leading-normal text-indigo-500 text-center mx-auto font-extrabold my-10">
                         <div className=' sm:block animate-enter'>Hi👋, myself <span className='span'>Prathmesh,</span></div>
                         <span className=' sm:block animate-enter opacity-0 [animation-delay:_0.5s]'>I'm a Software Developer.</span>

@@ -27,7 +27,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="text-center">
+                    <div className="text-center xl:block hidden">
                         <p className="text-gray-500 text-xs font-inter">
                             <a
                                 href="https://storyset.com/coding"
