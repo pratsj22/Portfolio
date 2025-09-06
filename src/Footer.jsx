@@ -17,11 +17,11 @@ const Footer = () => {
                     {/* Tech Stack Icons */}
                     <div className="flex flex-wrap justify-center items-center gap-6 mb-5">
                         <div className="flex flex-col items-center group">
-                            <img src="/react-icon.png" alt="React" className="w-12 h-12" />
+                            <img src="/icons/react-icon.png" alt="React" className="w-12 h-12" />
                         </div>
 
                         <div className="flex flex-col items-center group">
-                            <img src="/tailwind.png" alt="Tailwind CSS" className="w-12 h-6" />
+                            <img src="/icons/tailwind.png" alt="Tailwind CSS" className="w-12 h-6" />
                         </div>
 
 

@@ -21,7 +21,7 @@ const Home = () => {
         <div className='relative [perspective:1000px] overflow-hidden'>
             <div className='[transform-style:preserve-3d]' style={{ transform: `rotateX(-${scale * 1.25}deg)`, borderBottomRightRadius: 60, borderBottomLeftRadius: 60, boxShadow: `0px 0px ${scale * 5}px oklch(48.8% 0.243 264.376)` }}>
                 <div>
-                    <img src="/photo1.jpeg" alt="" className='w-screen mt-1 mask-home-image h-[650px]' style={{ opacity, borderBottomRightRadius: 60, borderBottomLeftRadius: 60 }} />
+                    <img src="/images/home_bg.jpeg" alt="" className='w-screen mt-1 mask-home-image h-[650px]' style={{ opacity, borderBottomRightRadius: 60, borderBottomLeftRadius: 60 }} />
                 </div>
                 <div className='absolute sm:top-[10%] top-32 flex w-full items-center justify-center flex-col gap-4 sm:px-5 sm:mt-10'>
                     <div className="flex flex-col md:text-5xl sm:text-3xl text-[1.7rem] sm:font-sans font-poppins tracking-wide !leading-normal text-indigo-500 text-center mx-auto font-extrabold my-10">
