@@ -22,73 +22,94 @@ interface TiltCardProps extends SkillGroup {
   theme: ThemeMode
 }
 
-const coreStack: Skill[] = [
-  { name: 'React', icon: '/icons/React-Dark.svg' },
-  { name: 'Tailwind', icon: '/icons/TailwindCSS-Dark.svg' },
-  { name: 'Node.js', icon: '/icons/NodeJS-Dark.svg' },
-  { name: 'FastAPI', icon: '/icons/FastAPI.svg' },
-  { name: 'MongoDB', icon: '/icons/MongoDB.svg' },
-]
-
 const skillGroups: SkillGroup[] = [
   {
     title: 'Frontend',
-    description: 'React-first interfaces, responsive layouts, and state management that stay maintainable as features grow.',
+    description:
+      'React-first interfaces, responsive layouts, and state management that stay maintainable as features grow.',
     items: [
       { name: 'React', icon: '/icons/React-Dark.svg' },
+      { name: 'React Native', icon: '/icons/React-Dark.svg' },
+      { name: 'TypeScript', icon: '/icons/TypeScript.svg' },
+      { name: 'JavaScript', icon: '/icons/JavaScript.svg' },
+      { name: 'Tailwind CSS', icon: '/icons/TailwindCSS-Dark.svg' },
+      { name: 'Zustand', icon: '/icons/zustand.svg', darkIcon: '/icons/zustand-dark.svg' },
       { name: 'Redux', icon: '/icons/Redux.svg' },
-      { name: 'Tailwind', icon: '/icons/TailwindCSS-Dark.svg' },
       { name: 'HTML', icon: '/icons/HTML.svg' },
       { name: 'CSS', icon: '/icons/CSS.svg' },
-      { name: 'JavaScript', icon: '/icons/JavaScript.svg' },
-      { name: 'TypeScript', icon: '/icons/TypeScript.svg' },
-      { name: 'React Native', icon: '/icons/React-Dark.svg' },
     ],
   },
+
   {
     title: 'Backend & APIs',
-    description: 'Backend services, clean API contracts, and application structure built for reliability.',
+    description:
+      'Backend services, API design, asynchronous workflows, and application architecture built for reliability.',
     items: [
-      { name: 'Node.js', icon: '/icons/NodeJS-Dark.svg' },
-      { name: 'Express', icon: '/icons/ExpressJS-Dark.svg' },
       { name: 'FastAPI', icon: '/icons/FastAPI.svg' },
+      { name: 'Node.js', icon: '/icons/nodejs.svg' },
+      { name: 'Express', icon: '/icons/ExpressJS-Dark.svg' },
+      { name: 'Fastify', icon: '/icons/fastify-light.svg', darkIcon: '/icons/fastify-dark.svg' },
       { name: 'Flask', icon: '/icons/Flask-Dark.svg' },
     ],
   },
+
   {
     title: 'AI & LLM Systems',
-    description: 'Agentic workflows, RAG pipelines, and the tooling I use to build practical AI features.',
+    description:
+      'Agentic workflows, RAG pipelines, LLM integrations, and production-focused AI application tooling.',
     items: [
-      { name: 'LangChain', icon: '/icons/langchain.svg' ,darkIcon:'/icons/langchain-dark.png'},
-      { name: 'LangGraph', icon: '/icons/langgraph.png' ,darkIcon:'/icons/langgraph-dark.png'},
-      { name: 'CrewAI', icon: '/icons/crewai.png' },
+      {
+        name: 'LangChain',
+        icon: '/icons/langchain.svg',
+        darkIcon: '/icons/langchain-dark.png',
+      },
+      {
+        name: 'LangGraph',
+        icon: '/icons/langgraph.png',
+        darkIcon: '/icons/langgraph-dark.png',
+      },
+      { name: 'CrewAI', icon: '/icons/crewai.webp' },
+      { name: 'Vercel AI SDK' },
       { name: 'RAG' },
-      { name: 'MCP' },
+      { name: 'MCP', icon: '/icons/mcp.webp' },
+      { name: 'Google Gemini', icon: '/icons/gemini.svg' },
+      { name: 'OpenAI', icon: '/icons/openai.svg', darkIcon: '/icons/openai-light.svg' },
+      { name: 'Langfuse', icon: '/icons/langfuse.svg' },
     ],
   },
+
   {
-    title: 'Data Layer',
-    description: 'Persistence, schema design, and database choices that support product scale and clarity.',
+    title: 'Data & Storage',
+    description:
+      'Relational, document, vector, and in-memory data systems used across application and AI workloads.',
     items: [
-      { name: 'MongoDB', icon: '/icons/MongoDB.svg' },
-      { name: 'PostgreSQL', icon: '/icons/PostgreSQL-Dark.svg' },
+      { name: 'PostgreSQL', icon: '/icons/postgresql.svg' },
+      { name: 'MongoDB', icon: '/icons/mongodb.svg' },
+      { name: 'Redis', icon: '/icons/Redis-Light.svg', darkIcon: '/icons/Redis-Dark.svg' },
+      { name: 'Qdrant', icon: '/icons/qdrant.svg' },
     ],
   },
+
   {
     title: 'Languages',
-    description: 'The languages I rely on across frontend work, backend services, and AI-heavy implementations.',
+    description:
+      'Languages used across frontend applications, backend services, and AI-driven systems.',
     items: [
-      { name: 'Java', icon: '/icons/Java-Dark.svg' },
       { name: 'Python', icon: '/icons/Python-Dark.svg' },
-      { name: 'JavaScript', icon: '/icons/JavaScript.svg' },
+      { name: 'Java', icon: '/icons/Java-Dark.svg' },
       { name: 'TypeScript', icon: '/icons/TypeScript.svg' },
+      { name: 'JavaScript', icon: '/icons/JavaScript.svg' },
     ],
   },
+
   {
-    title: 'Workflow',
-    description: 'Everyday tools for shipping, reviewing, iterating, and keeping development fast.',
+    title: 'Workflow & Infrastructure',
+    description:
+      'Tools used for version control, containerization, deployment, observability, and day-to-day development.',
     items: [
       { name: 'GitHub', icon: '/icons/Github-Dark.svg' },
+      { name: 'Docker', icon: '/icons/Docker.svg' },
+      { name: 'Dokploy', icon: '/icons/dokploy.svg', darkIcon: '/icons/dokploy-dark.svg' },
       { name: 'VS Code', icon: '/icons/VSCode-Dark.svg' },
     ],
   },
@@ -244,15 +265,6 @@ const Skills: React.FC<SkillsProps> = ({ theme }) => {
             Hover over a skill to preview it. This section is organized around real delivery work instead of becoming
             one long wall of logos.
           </p>
-        </div>
-
-        <div className='glass-panel mt-10 rounded-4xl p-5 text-left sm:p-6'>
-          <div className='section-kicker'>Core Stack</div>
-          <div className='mt-4 flex flex-wrap gap-3'>
-            {coreStack.map((skill) => (
-              <SkillChip key={skill.name} skill={skill} theme={theme} />
-            ))}
-          </div>
         </div>
 
         <div className='mt-8 grid grid-cols-1 gap-6 md:grid-cols-2'>
