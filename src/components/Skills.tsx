@@ -84,7 +84,7 @@ const skillGroups: SkillGroup[] = [
       'Relational, document, vector, and in-memory data systems used across application and AI workloads.',
     items: [
       { name: 'PostgreSQL', icon: '/icons/postgresql.svg' },
-      { name: 'MongoDB', icon: '/icons/mongodb.svg' },
+      { name: 'MongoDB', icon: '/icons/mongo_db.svg' },
       { name: 'Redis', icon: '/icons/Redis-Light.svg', darkIcon: '/icons/Redis-Dark.svg' },
       { name: 'Qdrant', icon: '/icons/qdrant.svg' },
     ],
