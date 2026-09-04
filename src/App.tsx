@@ -41,11 +41,13 @@ const App = () => {
           theme={theme}
           onToggleTheme={() => setTheme((currentTheme) => currentTheme === 'dark' ? 'light' : 'dark')}
         />
-        <Home />
-        <Skills theme={theme}/>
-        <Experience />
-        <Projects />
-        <Contact />
+        <main>
+          <Home />
+          <Skills theme={theme} />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
         <Footer />
       </div>
     </div>
