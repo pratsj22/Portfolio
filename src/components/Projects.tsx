@@ -27,17 +27,17 @@ const projectsData: Project[] = [
       'Designed an asynchronous transcription pipeline using Redis queues, FFmpeg media conversion, silence detection, and chunked processing for efficient long-form audio processing.',
       'Improved transcription accuracy for multilingual pravachans and Sanskrit shlokas using Gemini, then generated structured HTML transcripts and downloadable PDFs for 50+ active users.',
     ],
-    image: '/images/transcribe.png',
+    image: '/images/transcribe.webp',
     tech: ['React.js', 'FastAPI', 'Redis', 'PostgreSQL', 'Gemini AI', 'FFmpeg'],
     links: {
       live: 'https://transcribe.contextcrafter.in',
       github: '',
     },
     gallery: [
-      '/images/transcribe.png',
-      '/images/transcribe1.png',
-      '/images/transcribe2.png',
-      '/images/transcribe3.png',
+      '/images/transcribe.webp',
+      '/images/transcribe1.webp',
+      '/images/transcribe2.webp',
+      '/images/transcribe3.webp',
     ],
   },
   {
@@ -50,13 +50,13 @@ const projectsData: Project[] = [
       'Combined FastAPI, RAG, and multimodal document handling into a production-ready backend.',
       'Built a React frontend with real-time streaming so complex responses still feel fast.',
     ],
-    image: '/images/bizassist.png',
+    image: '/images/bizassist.webp',
     tech: ['React.js', 'FastAPI', 'Python', 'LangChain', 'LangGraph'],
     links: {
       live: 'https://bizassist.prathmeshjain.in',
       github: 'https://github.com/prathmesh-jain/BizAssist',
     },
-    gallery: ['/images/bizassist.png', '/images/bizassist1.png', '/images/bizassist2.png', '/images/bizassist3.png'],
+    gallery: ['/images/bizassist.webp', '/images/bizassist1.webp', '/images/bizassist2.webp', '/images/bizassist3.webp'],
   },
   {
     title: 'ExpenseGauge',
@@ -68,13 +68,13 @@ const projectsData: Project[] = [
       'Handled secure auth, expense CRUD flows, and synced data across the stack.',
       'Added chart-driven insights to make spending trends easier to understand.',
     ],
-    image: '/images/expensegauge.jpg',
+    image: '/images/expensegauge.webp',
     tech: ['React Native', 'Expo', 'Node.js', 'MongoDB', 'Express', 'Zustand', 'NativeWind'],
     links: {
       live: 'https://expensegauge.vercel.app',
       github: 'https://github.com/prathmesh-jain/expensegauge-app',
     },
-    gallery: ['/images/expensegauge1.jpg', '/images/expensegauge2.jpg', '/images/expensegauge3.jpg', '/images/expensegauge4.jpg'],
+    gallery: ['/images/expensegauge1.webp', '/images/expensegauge2.webp', '/images/expensegauge3.webp', '/images/expensegauge4.webp'],
   },
 ]
 

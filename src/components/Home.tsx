@@ -123,9 +123,11 @@ const Home: React.FC = () => {
 
                             <div className='relative aspect-10/11 overflow-hidden rounded-[1.6rem]' style={{ transform: 'translateZ(26px)' }}>
                                 <img
-                                    src='/profile.jpg'
+                                    src='/profile.webp'
                                     alt='Prathmesh Jain portrait'
                                     className='absolute inset-0 h-full w-full object-cover object-top'
+                                    fetchPriority="high"
+                                    decoding="async"
                                 />
 
                                 <div
