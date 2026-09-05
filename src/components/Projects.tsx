@@ -24,8 +24,9 @@ const projectsData: Project[] = [
       'Developed an AI-powered lecture transcription platform that converts long-form spiritual discourses into structured, searchable, and downloadable PDF transcripts. Built the complete application with a React.js frontend, FastAPI backend, Redis-powered asynchronous processing, and PostgreSQL for persistent storage. Implemented scalable audio processing, AI-powered transcript generation, and automated PDF creation while optimizing transcription quality for multilingual lectures and Sanskrit shlokas.',
     highlights: [
       'Built responsive interfaces for authentication, file uploads, transcription history, live processing status, and PDF downloads.',
-      'Designed an asynchronous transcription pipeline using Redis queues, FFmpeg media conversion, silence detection, and chunked processing for efficient long-form audio processing.',
-      'Improved transcription accuracy for multilingual pravachans and Sanskrit shlokas using Gemini, then generated structured HTML transcripts and downloadable PDFs for 50+ active users.',
+      'Designed an asynchronous transcription pipeline using Redis queues, FFmpeg media conversion, silence detection, and chunked processing for efficient processing of long-form audio.',
+      'Improved transcription accuracy for multilingual pravachans and Sanskrit shlokas using Gemini, addressing the challenges of multilingual speech and specialized religious content.',
+      'Generated structured HTML transcripts and automated downloadable PDF creation for 50+ active users.',
     ],
     image: '/images/transcribe.webp',
     tech: ['React.js', 'FastAPI', 'Redis', 'PostgreSQL', 'Gemini AI', 'FFmpeg'],
@@ -40,41 +41,68 @@ const projectsData: Project[] = [
       '/images/transcribe3.webp',
     ],
   },
+
   {
     title: 'BizAssist',
     subtitle: 'AI Business Operations Assistant',
     description:
-      'Developed BizAssist as an AI-driven business operations assistant, handling end-to-end development including backend, frontend, and AI orchestration. The system uses a multi-agent architecture with LangGraph, where user queries are validated, planned, and routed to specialized agents for financial analysis, document Q&A, spreadsheet automation, and general tasks. I built the backend with FastAPI, integrated LangChain with ChromaDB for RAG, added multimodal processing for PDFs, DOCX, and images, and built a React frontend with Zustand and SSE for real-time responses.',
+      'Developed BizAssist as an AI-driven business operations assistant, handling end-to-end development across the backend, frontend, and AI orchestration layers. The system provides a unified interface for financial analysis, document Q&A, spreadsheet automation, and general business tasks. Built the backend with FastAPI and the frontend with React, integrating LangChain, LangGraph, Qdrant, multimodal document processing, Zustand, and SSE-based streaming to support complex AI-driven workflows.',
     highlights: [
-      'Designed a multi-agent workflow with LangGraph for task routing and orchestration.',
-      'Combined FastAPI, RAG, and multimodal document handling into a production-ready backend.',
-      'Built a React frontend with real-time streaming so complex responses still feel fast.',
+      'Designed a LangGraph-based multi-agent workflow where incoming user queries are validated, analyzed, planned, and routed to specialized execution agents based on the requested task.',
+      'Implemented document-grounded AI workflows using Qdrant for retrieval, with multimodal processing for PDFs, DOCX files, and images.',
+      'Developed real-time SSE-based response streaming with Zustand state management so users receive incremental responses and progress updates during longer-running AI workflows.',
     ],
     image: '/images/bizassist.webp',
-    tech: ['React.js', 'FastAPI', 'Python', 'LangChain', 'LangGraph'],
+    tech: [
+      'React.js',
+      'FastAPI',
+      'Python',
+      'LangChain',
+      'LangGraph',
+      'Qdrant',
+    ],
     links: {
       live: 'https://bizassist.prathmeshjain.in',
       github: 'https://github.com/prathmesh-jain/BizAssist',
     },
-    gallery: ['/images/bizassist.webp', '/images/bizassist1.webp', '/images/bizassist2.webp', '/images/bizassist3.webp'],
+    gallery: [
+      '/images/bizassist.webp',
+      '/images/bizassist1.webp',
+      '/images/bizassist2.webp',
+      '/images/bizassist3.webp',
+    ],
   },
+
   {
     title: 'ExpenseGauge',
     subtitle: 'Expense Tracker App',
     description:
-      'Developed a full-stack offline-first expense tracker app with Expo, Node.js, Express, and MongoDB for smooth data flow and secure user management. Implemented global state handling using Zustand, crafted a responsive UI with NativeWind, added full CRUD functionality for expenses, and visualized financial trends through a dynamic line chart.',
+      'Developed a full-stack offline-first expense tracker application using Expo and React Native for the mobile client, with Node.js, Express, and MongoDB powering the backend. The application enables users to manage expenses, track balances, securely manage their accounts, and visualize financial trends through an interactive mobile experience. Zustand handles global application state, while NativeWind is used to build the responsive interface.',
     highlights: [
-      'Built an offline-first mobile experience with Expo and React Native.',
-      'Handled secure auth, expense CRUD flows, and synced data across the stack.',
-      'Added chart-driven insights to make spending trends easier to understand.',
+      'Built an offline-first mobile experience that allows users to continue accessing and managing application data during connectivity loss and synchronize data with the backend when the connection is restored.',
+      'Implemented secure authentication and complete expense CRUD functionality across the React Native client and Node.js backend.',
+      'Added chart-driven financial insights to transform expense data into spending trends that are easier for users to understand.',
     ],
     image: '/images/expensegauge.webp',
-    tech: ['React Native', 'Expo', 'Node.js', 'MongoDB', 'Express', 'Zustand', 'NativeWind'],
+    tech: [
+      'React Native',
+      'Expo',
+      'Node.js',
+      'MongoDB',
+      'Express',
+      'Zustand',
+      'NativeWind',
+    ],
     links: {
       live: 'https://expensegauge.vercel.app',
       github: 'https://github.com/prathmesh-jain/expensegauge-app',
     },
-    gallery: ['/images/expensegauge1.webp', '/images/expensegauge2.webp', '/images/expensegauge3.webp', '/images/expensegauge4.webp'],
+    gallery: [
+      '/images/expensegauge1.webp',
+      '/images/expensegauge2.webp',
+      '/images/expensegauge3.webp',
+      '/images/expensegauge4.webp',
+    ],
   },
 ]
 
